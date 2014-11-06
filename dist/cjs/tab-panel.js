@@ -100,7 +100,7 @@ exports["default"] = Component.extend({
 
   registerWithTabs: function() {
     this.get('parentView').registerTabPanel(this);
-  }.on('didInsertElement'),
+  }.on('willInsertElement'),
 
   unregisterWithTabs: function() {
     this.get('parentView').unregisterTabPanel(this);
